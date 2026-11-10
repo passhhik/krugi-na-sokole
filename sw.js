@@ -1,7 +1,7 @@
 // Офлайн-кэш: игра открывается даже без интернета.
 // Картинки, иконки и модели берутся из кэша (меньше запросов к хостингу, повторный запуск быстрее),
 // страница — сначала из сети, чтобы обновления доходили сразу. Версия кэша меняется с каждой сборкой.
-const CACHE = 'sokol-6c37c57ebd';
+const CACHE = 'sokol-625f632d9e';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(k => Promise.all(k.filter(x => x !== CACHE).map(x => caches.delete(x)))).then(() => self.clients.claim())); });

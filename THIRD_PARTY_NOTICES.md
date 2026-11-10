@@ -26,6 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
 
-## 3D-модели героя
+## 3D-модели героя и людей на стадионе
 
 Quaternius — «Ultimate Modular Men» и «Ultimate Modular Women», лицензия CC0 (https://quaternius.com).
